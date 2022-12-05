@@ -5,7 +5,6 @@ from sys import argv
 
 
 if __name__ == '__main__':
-    """Script for task0"""
     user_request = requests.get(
         'http://jsonplaceholder.typicode.com/users/{}'.format(argv[1])).json()
     todos_req = requests.get(
